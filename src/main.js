@@ -1,4 +1,4 @@
-import{audio}from'./audio.js';import{createGame}from'./game.js';import{liveBridge}from'./live.js';
+import{audio}from'./audio.js?v=0.3.3';import{createGame}from'./game.js?v=0.3.3';import{liveBridge}from'./live.js?v=0.3.3';
 const sfx=audio(),game=createGame(document.querySelector('#game'),sfx),live=liveBridge(game),$=s=>document.querySelector(s);
 const soundBtn=$('#soundSettings'),testBtn=$('#testSound'),panelBtn=$('#panelButton'),closeBtn=$('#closePanel'),restartBtn=$('#restartGame'),minutesInput=$('#matchMinutes'),timerEl=$('#matchTimer'),podium=$('#finalPodium'),podiumList=$('#finalPodiumList'),newMatch=$('#newMatch');
 let duration=300,remaining=300,timer=0,ended=false,settingsPause=false;
